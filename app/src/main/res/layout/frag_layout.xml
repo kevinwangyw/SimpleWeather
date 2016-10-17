@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/weather_bkg_image"
+        android:layout_width="match_parent"
+        android:layout_height="286dp"
+        android:background="@drawable/bkg"
+    />
+
+    <ImageView
+        android:id="@+id/weather_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/weather_bkg_image"
+        android:layout_alignRight="@id/weather_bkg_image"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+    />
+
+    <ImageView
+        android:id="@+id/refresh_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/ic_action_reload"
+    />
+
+    <TextView
+        android:id="@+id/cur_temperature_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:textSize="40dp"
+        android:textColor="@android:color/white"
+    />
+
+    <TextView
+        android:id="@+id/cur_weather_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cur_temperature_text"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+    />
+
+    <TextView
+        android:id="@+id/wind_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cur_weather_text"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="5dp"
+        android:textSize="20dp"
+        android:textColor="@color/weather_text_color"
+    />
+
+    <TextView
+        android:id="@+id/air_quality_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wind_text"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="5dp"
+        android:textSize="20dp"
+        android:textColor="@color/weather_text_color"
+    />
+
+    <TextView
+        android:id="@+id/update_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/weather_bkg_image"
+        android:layout_alignRight="@id/weather_bkg_image"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/weather_text_color"
+    />
+
+    <TextView
+        android:id="@+id/city_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/weather_bkg_image"
+        android:layout_alignLeft="@id/weather_bkg_image"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/weather_text_color"
+    />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_toRightOf="@id/city_text"
+        android:layout_alignBottom="@id/city_text"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ic_location"
+    />
+
+    <ListView
+        android:id="@+id/weather_info_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/weather_bkg_image"
+    />
+
+</RelativeLayout>

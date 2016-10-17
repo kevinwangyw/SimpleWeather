@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="@android:color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/add_city_viewstub_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="请输入需要添加的城市"
+    />
+
+    <Button
+        android:id="@+id/add_city_viewstub_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/add_city_viewstub_edit"
+        android:layout_marginTop="15dp"
+        android:text="添加"
+    />
+
+    <TextView
+        android:id="@+id/cities_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前城市:"
+        android:layout_below="@id/add_city_viewstub_edit"
+        android:layout_alignLeft="@id/add_city_viewstub_edit"
+        android:textSize="15dp"
+        android:layout_marginBottom="5dp"
+    />
+
+    <GridView
+        android:id="@+id/cities_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cities_text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+    >
+
+    </GridView>
+</RelativeLayout>

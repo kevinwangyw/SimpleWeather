@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SimpleWeather</string>
+    <string name="toobar_add_city">添加城市</string>
+    <string name="signal_text">指数</string>
+    <string name="trend_text">趋势</string>
+    <string name="comf_text">舒适指数:</string>
+    <string name="cw_text">洗车指数:</string>
+    <string name="drsg_text">穿衣指数:</string>
+    <string name="flu_text">感冒指数:</string>
+    <string name="sport_text">运动指数:</string>
+    <string name="uv_text">紫外线指数:</string>
+</resources>
